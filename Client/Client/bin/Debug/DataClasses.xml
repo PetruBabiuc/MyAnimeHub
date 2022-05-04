@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataClasses</name>
+    </assembly>
+    <members>
+        <member name="T:DataClasses.Anime">
+            <summary>
+            The class encapsulating an anime's data
+            </summary>
+        </member>
+        <member name="T:DataClasses.News">
+            <summary>
+            The class encapsulating a news' data
+            </summary>
+        </member>
+        <member name="T:DataClasses.Review">
+            <summary>
+            The class encapsulating a review's data
+            </summary>
+        </member>
+        <member name="T:DataClasses.UserAccount">
+            <summary>
+            The class encapsulating an user account's data
+            Its properties setters have many checks generating exceptions (of ArgumentException type) if the given values are not valid. 
+            </summary>
+        </member>
+        <member name="P:DataClasses.UserAccount.UserName">
+            <summary>
+            Should match the ^[0-9a-zA-Z]{5,20}$ Regex
+            </summary>
+        </member>
+        <member name="P:DataClasses.UserAccount.Password">
+            <summary>
+            Should match the ^[0-9a-zA-Z]{5,20}$ Regex
+            </summary>
+        </member>
+        <member name="P:DataClasses.UserAccount.Name">
+            <summary>
+            Should match the ^[a-zA-Z]*[0-9]*$ Regex and have the length between 5 and 20 characters
+            </summary>
+        </member>
+        <member name="P:DataClasses.UserAccount.Mail">
+            <summary>
+            Should match the ^[a-zA-Z][0-9a-zA-Z]+@((yahoo)|(gmail))\.((ro)|(com))$ Regex
+            </summary>
+        </member>
+        <member name="P:DataClasses.UserAccount.BirthDate">
+            <summary>
+            Should have the DAY/MONTH/YEAR format
+            The year should not be less than (TheCurrentYear - 100) and above (TheCurrentYear - 14)
+            </summary>
+        </member>
+    </members>
+</doc>

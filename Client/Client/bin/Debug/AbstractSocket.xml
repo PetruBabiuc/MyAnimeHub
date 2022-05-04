@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AbstractSocket</name>
+    </assembly>
+    <members>
+        <member name="T:Sockets.AbstractEncryptingSocket">
+            <summary>
+            Class used to send and received encrypted strings through Sockets
+            </summary>
+        </member>
+        <member name="F:Sockets.AbstractEncryptingSocket.Key">
+            <summary>
+            Encryption key
+            </summary>
+        </member>
+        <member name="M:Sockets.AbstractEncryptingSocket.Receive(System.Net.Sockets.Socket)">
+            <summary>
+            Method used to receive a string
+            </summary>
+            <param name="socket">
+            The Socket used for communication
+            </param>
+        </member>
+        <member name="M:Sockets.AbstractEncryptingSocket.Send(System.String,System.Net.Sockets.Socket)">
+            <summary>
+            Method used to send a string
+            </summary>
+            <param name="data">
+            The string to be sent
+            </param>
+            <param name="socket">
+            The Socket used for communication
+            </param>
+        </member>
+        <member name="T:Sockets.AbstractSocket">
+            <summary>
+            The abstract class that encapsulates a Socket for communicating
+            The class requires a file with the relative path Config/ServerInfo.cfg with the Socket port on the first line.
+            </summary>
+        </member>
+        <member name="F:Sockets.AbstractSocket._socket">
+            <summary>
+            The encapsulated socket used for communicating
+            </summary>
+        </member>
+        <member name="F:Sockets.AbstractSocket._endPoint">
+            <summary>
+            The IPEndPoint
+            </summary>
+        </member>
+        <member name="M:Sockets.AbstractSocket.#cctor">
+            <summary>
+            The static constructor. It reads the server port from the first line of the file Config/ServerInfo.cfg
+            </summary>
+        </member>
+        <member name="M:Sockets.AbstractSocket.#ctor">
+            <summary>
+            The primary constructor.
+            </summary>
+        </member>
+        <member name="M:Sockets.AbstractSocket.CloseApplication(System.String)">
+            <summary>
+            Method that shows the message in a MessageBox and closes the application.
+            </summary>
+            <param name="message">
+            The message shown in the MessageBox
+            </param>
+        </member>
+        <member name="M:Sockets.AbstractSocket.Receive(System.Net.Sockets.Socket)">
+            <summary>
+            Method used to receive a string from the given Socket
+            </summary>
+            <param name="socket">
+            Socket used for the communication
+            </param>
+            <returns>
+            The bytes received and converted into a string
+            </returns>
+        </member>
+        <member name="M:Sockets.AbstractSocket.Send(System.String,System.Net.Sockets.Socket)">
+            <summary>
+            Method used to send a string using the given Socket
+            </summary>
+            <param name="data">
+            The string sent
+            </param>
+            <param name="socket">
+            The socket used for communication
+            </param>
+        </member>
+        <member name="M:Sockets.AbstractSocket.CloseSocket(System.Net.Sockets.Socket)">
+            <summary>
+            Function used to close a socket
+            </summary>
+            <param name="socket">
+            The socket which is closed
+            </param>
+        </member>
+    </members>
+</doc>

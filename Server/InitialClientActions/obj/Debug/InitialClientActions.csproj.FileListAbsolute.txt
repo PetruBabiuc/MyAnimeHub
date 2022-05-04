@@ -1,0 +1,5 @@
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\InitialClientActions\bin\Debug\InitialClientActions.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\InitialClientActions\bin\Debug\InitialClientActions.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\InitialClientActions\obj\Debug\InitialClientActions.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\InitialClientActions\obj\Debug\InitialClientActions.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\InitialClientActions\bin\Debug\InitialClientActions.XML

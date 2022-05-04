@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Interfaces</name>
+    </assembly>
+    <members>
+        <member name="T:Interfaces.IClientSocket">
+            <summary>
+            The interface of the client's connection to the server
+            </summary>
+        </member>
+        <member name="M:Interfaces.IClientSocket.Send(System.String)">
+            <summary>
+            The function used to send a string message to the server
+            </summary>
+            <param name="data">
+            The string to be sent
+            </param>
+        </member>
+        <member name="M:Interfaces.IClientSocket.Receive">
+            <summary>
+            The method called to receive a string message from the server
+            </summary>
+            <returns>
+            The bytes sent by the server decoded into a string
+            </returns>
+        </member>
+        <member name="T:Interfaces.IView">
+            <summary>
+            The interface of application's view
+            It exists to ensure that the Inverse Dependency principle is not violated
+            And to provide an opportunity to further develop the application by adding new views (GUI or even CLI)
+            </summary>
+        </member>
+        <member name="P:Interfaces.IView.States">
+            <summary>
+            SetOnly property for assigning the states of the views
+            </summary>
+        </member>
+        <member name="P:Interfaces.IView.SelectedAnime">
+            <summary>
+            Object used by the states for anime data transfer
+            </summary>
+        </member>
+        <member name="P:Interfaces.IView.CurrentAccount">
+            <summary>
+            Object used by the states for account informations data transfer
+            </summary>
+        </member>
+        <member name="M:Interfaces.IView.Start">
+            <summary>
+            Method that starts acquiring user's requests and displaying their results
+            It should be a blocking infinite loop
+            </summary>
+        </member>
+        <member name="M:Interfaces.IView.ChangeState(Interfaces.IViewState,System.Int32)">
+            <summary>
+            The function used by the view states to change the current state
+            To other states
+            </summary>
+            <param name="currentState">
+            The current state
+            </param>
+            <param name="nextState">
+            The next state
+            </param>
+        </member>
+        <member name="T:Interfaces.IViewState">
+            <summary>
+            The interface of all the view states
+            </summary>
+        </member>
+        <member name="P:Interfaces.IViewState.View">
+            <summary>
+            SetOnly property that sets the view
+            </summary>
+        </member>
+        <member name="P:Interfaces.IViewState.DbManager">
+            <summary>
+            SetOnly property that sets the DBManager
+            </summary>
+        </member>
+        <member name="M:Interfaces.IViewState.Show">
+            <summary>
+            Function that make the state visible and let him acquire user inputs
+            And transmit them to the server
+            It should be an infinite loop, exiting only when the state changes
+            </summary>
+        </member>
+        <member name="M:Interfaces.IViewState.Hide">
+            <summary>
+            Function that stops a state from taking inputs from the user
+            </summary>
+        </member>
+    </members>
+</doc>

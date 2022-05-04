@@ -1,0 +1,8 @@
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\bin\Debug\Newtonsoft.Json.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\bin\Debug\Newtonsoft.Json.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\bin\Debug\CommonHelpers.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\bin\Debug\CommonHelpers.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\obj\Debug\CommonHelpers.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\obj\Debug\CommonHelpers.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\bin\Debug\CommonHelpers.XML
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\obj\Debug\CommonHelpers.csprojResolveAssemblyReference.cache

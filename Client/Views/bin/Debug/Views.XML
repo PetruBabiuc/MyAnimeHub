@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Views</name>
+    </assembly>
+    <members>
+        <member name="T:Views.AnimeViewState">
+            <summary>
+            The class that encapsulates the view state in which the user
+            Can see the selected (from the SearchViewState) anime
+            See its reviews and add a review to it
+            </summary>
+        </member>
+        <member name="F:Views.AnimeViewState._reviewsPageIndex">
+            <summary>
+            The index of the review page shown
+            </summary>
+        </member>
+        <member name="M:Views.AnimeViewState.ChangeState(Views.GuiViewStateType)">
+            <summary>
+            Method used to change the state of the view
+            </summary>
+            <param name="nextState">
+            The next state
+            </param>
+        </member>
+        <member name="M:Views.AnimeViewState.DisplayAnime">
+            <summary>
+            Method used to fetch and display informations about the selected anime
+            </summary>
+        </member>
+        <member name="M:Views.AnimeViewState.DisplayReviews">
+            <summary>
+            Function that loads and shows the reviews of the selected anime
+            Each review is displayed in a separate panel.
+            Each of those panels are in the panelReviewuri panel
+            </summary>
+        </member>
+        <member name="M:Views.AnimeViewState.ResetState">
+            <summary>
+            Resets the state by, for example emptying text boxes
+            </summary>
+        </member>
+        <member name="M:Views.AnimeViewState.StateVisibilityChanged">
+            <summary>
+            Method updates the state if the state became visible
+            </summary>
+        </member>
+        <member name="M:Views.AnimeViewState.buttonAdauga_Click(System.Object,System.EventArgs)">
+            <summary>
+            Method that adds or updates the user's review
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Views.AnimeViewState.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Views.AnimeViewState.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Views.AnimeViewState.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Views.GuiView">
+            <summary>
+            The View class that encapsulates all the GUI used to communicate with the user
+            </summary>
+        </member>
+        <member name="F:Views.GuiView._states">
+            <summary>
+            SetOnly property for assigning the states of the views
+            </summary>
+        </member>
+        <member name="F:Views.GuiView._selectedAnime">
+            <summary>
+            Object used by the states for anime data transfer
+            </summary>
+        </member>
+        <member name="F:Views.GuiView._currentAccount">
+            <summary>
+            Object used by the states for account informations data transfer
+            </summary>
+        </member>
+        <member name="M:Views.GuiView.Start">
+            <summary>
+            Method that starts acquiring user's requests and displaying their results
+            It blocks the current thread by calling Application.Run
+            </summary>
+        </member>
+        <member name="M:Views.GuiView.ChangeState(Interfaces.IViewState,System.Int32)">
+            <summary>
+            The function used by the view states to change the current state
+            To other states
+            </summary>
+            <param name="currentState">
+            The current state
+            </param>
+            <param name="nextState">
+            The next state
+            </param>
+        </member>
+        <member name="T:Views.GuiViewStateType">
+            <summary>
+            Enum that contains all the view states of the GUI View.
+            Their order matters, each of their values represent the index of the correspondig GUIViewState in the View's list
+            Updating this enum requires updating the ViewStateFactory class
+            </summary>
+        </member>
+        <member name="T:Views.ProfileViewState">
+            <summary>
+            The class that encapsulates the view state in which the user is able to see his profile and update it
+            </summary>
+        </member>
+        <member name="M:Views.ProfileViewState.FillProfileFields">
+            <summary>
+            Loads the user's profile into the fields
+            </summary>
+        </member>
+        <member name="F:Views.ProfileViewState.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Views.ProfileViewState.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Views.ProfileViewState.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Views.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Views.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Views.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Views.SearchViewState">
+            <summary>
+            The class that encapsulates the view state in which the user sees the matches of the searched anime and can select one for getting more informations
+            </summary>
+        </member>
+        <member name="F:Views.SearchViewState.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Views.SearchViewState.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Views.SearchViewState.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ViewStates.HomeViewState">
+            <summary>
+            The class that encapsulates the view state in which the user can see the news
+            </summary>
+        </member>
+        <member name="F:ViewStates.HomeViewState._pageIndex">
+            <summary>
+            The index of the news page shown
+            </summary>
+        </member>
+        <member name="M:ViewStates.HomeViewState.ChangeState(Views.GuiViewStateType)">
+            <summary>
+            Method used to change the state of the view
+            </summary>
+            <param name="nextState">
+            The next state
+            </param>
+        </member>
+        <member name="M:ViewStates.HomeViewState.ResetState">
+            <summary>
+            Resets the state by, for example emptying text boxes
+            </summary>
+        </member>
+        <member name="M:ViewStates.HomeViewState.StateVisibilityChanged">
+            <summary>
+            Method updates the state if the state became visible
+            </summary>
+        </member>
+        <member name="M:ViewStates.HomeViewState.UpdateNews">
+            <summary>
+            Updates the news page shown
+            </summary>
+        </member>
+        <member name="F:ViewStates.HomeViewState.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ViewStates.HomeViewState.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ViewStates.HomeViewState.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ViewStates.IntroViewState">
+            <summary>
+            The class that encapsulates the view state in which the user is welcomed
+            </summary>
+        </member>
+        <member name="F:ViewStates.IntroViewState.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ViewStates.IntroViewState.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ViewStates.IntroViewState.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ViewStates.LoginViewState">
+            <summary>
+            The class that encapsulates the view state in which the user logs in
+            </summary>
+        </member>
+        <member name="F:ViewStates.LoginViewState.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ViewStates.LoginViewState.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ViewStates.LoginViewState.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ViewStates.RegisterViewState">
+            <summary>
+            The class that encapsulates the view state in which the user can register
+            </summary>
+        </member>
+        <member name="F:ViewStates.RegisterViewState.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ViewStates.RegisterViewState.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ViewStates.RegisterViewState.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ViewStates.ViewStateFactory">
+            <summary>
+            The factory that creates the states of the GUI View
+            </summary>
+        </member>
+        <member name="M:ViewStates.ViewStateFactory.CreateStates(Interfaces.IView)">
+            <summary>
+            Creates the states
+            </summary>
+            <param name="view">
+            The view that will manage the states
+            </param>
+            <returns>
+            The created states
+            </returns>
+        </member>
+    </members>
+</doc>

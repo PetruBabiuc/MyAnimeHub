@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sockets</name>
+    </assembly>
+    <members>
+        <member name="T:Sockets.ClientSocket">
+            <summary>
+            Class that handles the communication with the server
+            </summary>
+        </member>
+        <member name="M:Sockets.ClientSocket.#ctor">
+            <summary>
+            Constructor that establishes the connection to the server
+            It displays a MessageBox with an error message and closes the application
+            If the connection fails
+            </summary>
+        </member>
+        <member name="M:Sockets.ClientSocket.Send(System.String)">
+            <summary>
+            The function used to send a string message to the server
+            </summary>
+            <param name="data">
+            The string to be sent
+            </param>
+        </member>
+        <member name="M:Sockets.ClientSocket.Receive">
+            <summary>
+            The method called to receive a string message from the server
+            </summary>
+            <returns>
+            The bytes sent by the server decoded into a string
+            </returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CommonInterfaces</name>
+    </assembly>
+    <members>
+        <member name="T:Interfaces.IMyAnimeHubDBManager">
+            <summary>
+            The interface of the MyAnimeHub data base manager.
+            It contains all the methods needed to operate with the database
+            </summary>
+        </member>
+        <member name="M:Interfaces.IMyAnimeHubDBManager.Login(System.String,System.String)">
+            <summary>
+            Function used to log in the client
+            </summary>
+            <param name="user">
+            The user name of the client
+            </param>
+            <param name="pass">
+            The password of the client
+            </param>
+            <returns>
+            True if there is an user with the given credentials, false otherwise
+            </returns>
+        </member>
+        <member name="M:Interfaces.IMyAnimeHubDBManager.RegisterUserAccount(DataClasses.UserAccount)">
+            <summary>
+            Method to register an account
+            </summary>
+            <param name="account">
+            The object that encapsulates all the informations about the account
+            </param>
+            <returns>
+            True if the registration was successful, false otherwise
+            </returns>
+        </member>
+        <member name="M:Interfaces.IMyAnimeHubDBManager.UpdateProfile(DataClasses.UserAccount)">
+            <summary>
+            The method used to update client's user profile
+            </summary>
+            <param name="account">
+            The object that encapsulates all the new informations about the profile
+            </param>
+            <returns>
+            True if the update was successful, false otherwise
+            </returns>
+        </member>
+        <member name="M:Interfaces.IMyAnimeHubDBManager.AddOrReplaceReview(DataClasses.Review)">
+            <summary>
+            Function that adds a review in the data base
+            </summary>
+            <param name="review">
+            The object that encapsulates review's data
+            </param>
+        </member>
+        <member name="M:Interfaces.IMyAnimeHubDBManager.GetUserAccount(System.String,System.String)">
+            <summary>
+            Method that fetches all the informations about the user profile
+            </summary>
+            <param name="user">
+            The user name of the account
+            </param>
+            <param name="pass">
+            The password of the account
+            </param>
+            <returns>
+            An object that encapsulates all the informations about the profile
+            </returns>
+        </member>
+        <member name="M:Interfaces.IMyAnimeHubDBManager.GetAnimeList(System.String,System.Int32)">
+            <summary>
+            Method used to fetch the anime names and IDs
+            </summary>
+            <param name="name">
+            The string that should be found case insensitively in the anime name
+            </param>
+            <param name="pageIndex">
+            The index of the page
+            </param>
+            <returns>
+            A list of objects encapsulating anime which have a name matching given name
+            </returns>
+        </member>
+        <member name="M:Interfaces.IMyAnimeHubDBManager.GetNews(System.Int32)">
+            <summary>
+            Function used to obtain the news
+            </summary>
+            <param name="pageIndex">
+            The index of the news page
+            </param>
+            <returns>
+            A list of objects encapsulating news
+            </returns>
+        </member>
+        <member name="M:Interfaces.IMyAnimeHubDBManager.GetReviews(System.Int32,System.Int32)">
+            <summary>
+            Method that finds the reviews from the desired anime
+            </summary>
+            <param name="animeId">
+            The ID of the anime whose reviews are wanted
+            </param>
+            <param name="pageIndex">
+            The index of the reviews page
+            </param>
+            <returns>
+            A list of objects encapsulating reviews
+            </returns>
+        </member>
+        <member name="M:Interfaces.IMyAnimeHubDBManager.GetSpecificAnime(System.Int32)">
+            <summary>
+            Function used to fetch all the data about an anime
+            </summary>
+            <param name="animeId">
+            Desired anime's ID
+            </param>
+            <returns>
+            The object encapsulating the anime
+            </returns>
+        </member>
+    </members>
+</doc>

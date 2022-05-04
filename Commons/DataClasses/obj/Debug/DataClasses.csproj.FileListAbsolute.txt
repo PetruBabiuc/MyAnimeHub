@@ -1,0 +1,11 @@
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\bin\Debug\DataClasses.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\bin\Debug\DataClasses.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\obj\Debug\DataClasses.csprojResolveAssemblyReference.cache
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\obj\Debug\DataClasses.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\obj\Debug\DataClasses.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\bin\Debug\CommonHelpers.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\bin\Debug\Newtonsoft.Json.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\bin\Debug\CommonHelpers.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\bin\Debug\Newtonsoft.Json.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\bin\Debug\DataClasses.XML
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\DataClasses\bin\Debug\CommonHelpers.xml

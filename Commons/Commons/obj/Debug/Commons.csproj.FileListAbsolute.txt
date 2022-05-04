@@ -1,0 +1,5 @@
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\bin\Debug\Commons.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\bin\Debug\Commons.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\obj\Debug\Commons.csprojResolveAssemblyReference.cache
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\obj\Debug\Commons.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\Commons\obj\Debug\Commons.pdb

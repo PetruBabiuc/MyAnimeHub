@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sockets</name>
+    </assembly>
+    <members>
+        <member name="T:Sockets.ServerSocket">
+            <summary>
+            The SINGLETON class that contains the MyAnimeHub server's presentation 
+            It implements the singleton design pattern because the server should listen on only one port
+            </summary>
+        </member>
+        <member name="F:Sockets.ServerSocket.PadLock">
+            <summary>
+            Object used for making sure that only 1 thread creates the private static instance
+            The other threads will just receive a reference to the instance
+            </summary>
+        </member>
+        <member name="F:Sockets.ServerSocket.instance">
+            <summary>
+            Singleton's instance
+            </summary>
+        </member>
+        <member name="F:Sockets.ServerSocket._dbManager">
+            <summary>
+            The DataBaseManager adapter
+            </summary>
+        </member>
+        <member name="P:Sockets.ServerSocket.Instance">
+            <summary>
+            ReadOnly property used to obtain singleton's instance
+            </summary>
+        </member>
+        <member name="M:Sockets.ServerSocket.StartServingAsynchronously">
+            <summary>
+            The function that starts a thread where the server will accept client's connections
+            and process their requests
+            </summary>
+        </member>
+        <member name="M:Sockets.ServerSocket.GetClientIPAddress(System.Net.Sockets.Socket)">
+            <summary>
+            Static method that gets client's IP address
+            </summary>
+            <param name="clientSocket">
+            The client
+            </param>
+            <returns>
+            The IP address as a string
+            </returns>
+        </member>
+        <member name="M:Sockets.ServerSocket.ServeClient(System.Object)">
+            <summary>
+            Function that processes client's requests
+            </summary>
+            <param name="clientConnection">
+            A reference to the Socket object encapsulating the client's connections
+            It's type is "object" to be eligible to be executed as a new thread's target function
+            </param>
+        </member>
+        <member name="M:Sockets.ServerSocket.Login(System.Net.Sockets.Socket)">
+            <summary>
+            Method that handles the communication with the client
+            until the client logs in.
+            The client can also register.
+            If the client registers, the login tries number is reseted
+            </summary>
+            <param name="clientSocket">
+            The Socket encapsulating the connection with the client
+            </param>
+            <returns>
+            True if the client logged in successfully, false otherwise
+            </returns>
+        </member>
+        <member name="M:Sockets.ServerSocket.ListenForever">
+            <summary>
+            Function containing an infinite loop in which the server is accepting new client connections
+            And starts a new thread in which the client's requests are processed
+            </summary>
+        </member>
+    </members>
+</doc>
