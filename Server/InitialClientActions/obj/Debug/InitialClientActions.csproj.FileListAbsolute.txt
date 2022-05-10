@@ -3,3 +3,9 @@ E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\InitialClientActions\bin\Debug\In
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\InitialClientActions\obj\Debug\InitialClientActions.dll
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\InitialClientActions\obj\Debug\InitialClientActions.pdb
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\InitialClientActions\bin\Debug\InitialClientActions.XML
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\InitialClientActions\bin\Debug\InitialClientActions.XML
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\InitialClientActions\bin\Debug\InitialClientActions.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\InitialClientActions\bin\Debug\InitialClientActions.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\InitialClientActions\obj\Debug\InitialClientActions.csprojResolveAssemblyReference.cache
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\InitialClientActions\obj\Debug\InitialClientActions.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\InitialClientActions\obj\Debug\InitialClientActions.pdb

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InitialClientActions</name>
+    </assembly>
+    <members>
+        <member name="T:InitialClientActions.InitialAction">
+            <summary>
+            Enum of the actions that users can make before logging in
+            </summary>
+        </member>
+    </members>
+</doc>

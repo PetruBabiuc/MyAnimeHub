@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Server</name>
+    </assembly>
+    <members>
+        <member name="T:Server.Program">
+            <summary>
+            Main class
+            </summary>
+        </member>
+        <member name="M:Server.Program.Main(System.String[])">
+            <summary>
+            Server's entry point (Main function)
+            </summary>
+            <param name="args">
+            Command line arguments (unused at the moment)
+            </param>
+        </member>
+    </members>
+</doc>

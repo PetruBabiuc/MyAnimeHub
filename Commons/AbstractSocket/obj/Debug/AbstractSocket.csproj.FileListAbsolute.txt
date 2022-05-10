@@ -9,3 +9,14 @@ E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\AbstractSocket\bin\Debug\CommonH
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\AbstractSocket\bin\Debug\Newtonsoft.Json.xml
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\AbstractSocket\bin\Debug\AbstractSocket.xml
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\AbstractSocket\bin\Debug\CommonHelpers.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\bin\Debug\AbstractSocket.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\bin\Debug\AbstractSocket.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\bin\Debug\AbstractSocket.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\bin\Debug\CommonHelpers.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\bin\Debug\Newtonsoft.Json.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\bin\Debug\CommonHelpers.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\bin\Debug\CommonHelpers.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\bin\Debug\Newtonsoft.Json.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\obj\Debug\AbstractSocket.csprojResolveAssemblyReference.cache
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\obj\Debug\AbstractSocket.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\AbstractSocket\obj\Debug\AbstractSocket.pdb

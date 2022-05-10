@@ -7,3 +7,12 @@ E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\Interfaces\bin\Debug\InitialClien
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\Interfaces\bin\Debug\InitialClientActions.pdb
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\Interfaces\bin\Debug\Interfaces.XML
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Server\Interfaces\bin\Debug\InitialClientActions.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\Interfaces\bin\Debug\Interfaces.XML
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\Interfaces\bin\Debug\Interfaces.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\Interfaces\bin\Debug\Interfaces.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\Interfaces\bin\Debug\InitialClientActions.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\Interfaces\bin\Debug\InitialClientActions.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\Interfaces\bin\Debug\InitialClientActions.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\Interfaces\obj\Debug\Interfaces.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Server\Interfaces\obj\Debug\Interfaces.pdb

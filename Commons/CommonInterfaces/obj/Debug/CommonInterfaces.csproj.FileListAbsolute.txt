@@ -12,3 +12,17 @@ E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\CommonInterfaces\bin\Debug\Newto
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\CommonInterfaces\bin\Debug\CommonInterfaces.XML
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\CommonInterfaces\bin\Debug\DataClasses.xml
 E:\Programe\An 3\Semestrul 2\IP\Proiect\Commons\CommonInterfaces\bin\Debug\CommonHelpers.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\CommonInterfaces.XML
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\CommonInterfaces.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\CommonInterfaces.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\DataClasses.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\CommonHelpers.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\Newtonsoft.Json.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\DataClasses.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\DataClasses.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\CommonHelpers.pdb
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\CommonHelpers.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\bin\Debug\Newtonsoft.Json.xml
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\obj\Debug\CommonInterfaces.csprojResolveAssemblyReference.cache
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\obj\Debug\CommonInterfaces.dll
+E:\Programe\An 3\Semestrul 2\IP\Proiect\MyAnimeHub\Commons\CommonInterfaces\obj\Debug\CommonInterfaces.pdb
