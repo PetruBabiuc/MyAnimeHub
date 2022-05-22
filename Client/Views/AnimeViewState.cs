@@ -1,4 +1,13 @@
-﻿using DataClasses;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        AnimeViewState.cs                                        *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: Contains the class that encapsulates the state of the    *
+ *               application where the user can see and interact with     *
+ *               the page of an anime.                                    *
+ *                                                                        *
+ **************************************************************************/
+using DataClasses;
 using Interfaces;
 using System;
 using System.Collections.Generic;

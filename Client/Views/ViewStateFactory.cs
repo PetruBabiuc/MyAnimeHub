@@ -1,4 +1,12 @@
-﻿using System.Collections.Generic;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        ViewStateFactory.cs                                      *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: The class used by the GUIView class to instantiate       *
+ *               its states correctly.                                    *
+ *                                                                        *
+ **************************************************************************/
+using System.Collections.Generic;
 using Interfaces;
 using DBManagers;
 using Views;

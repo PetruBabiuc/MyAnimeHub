@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IntroViewState.cs                                        *
+ *  Copyright:   (c) 2022, Maria Lupu                                     *
+ *  Description: The source file contains the initial view state. From    *
+ *               this state the user has the possibility to go in the     *
+ *               log in state or the register state.                      *
+ *                                                                        *
+ **************************************************************************/
+using System;
 using System.Windows.Forms;
 using Interfaces;
 using Views;

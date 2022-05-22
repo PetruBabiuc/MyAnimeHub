@@ -1,4 +1,13 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        ClientSocket.cs                                          *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: Defines the class ClientSocket that is a socket wrapper. *
+ *               It is used by the data base proxy to communicate         *
+ *               with the server.                                         *
+ *                                                                        *
+ **************************************************************************/
+using System;
 using Interfaces;
 using System.Net.Sockets;
 

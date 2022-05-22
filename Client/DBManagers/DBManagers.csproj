@@ -42,7 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBManagerClientProxy.cs" />
+    <Compile Include="Cezar\DBManagerClientProxy.cs" />
+    <Compile Include="Elena\DBManagerClientProxy.cs" />
+    <Compile Include="Maria\DBManagerClientProxy.cs" />
+    <Compile Include="Petru\DBManagerClientProxy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

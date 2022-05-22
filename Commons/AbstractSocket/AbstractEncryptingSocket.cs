@@ -1,4 +1,14 @@
-﻿using CommonHelpers;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        AbstractEncryptingSocket.cs                              *
+ *  Copyright:   (c) 2022, Maria Lupu                                     *
+ *  Description: The AbstractEncryptingSocket class. It is a subclass     *
+ *               of the class AbstractSocket. It has the responsability   *
+ *               to encrypt sent strings and decrypt received ones        *
+ *               using the Cryptography class.                            *
+ *                                                                        *
+ **************************************************************************/
+using CommonHelpers;
 using System.Net.Sockets;
 
 

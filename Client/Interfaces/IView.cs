@@ -1,4 +1,12 @@
-﻿using DataClasses;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IView.cs                                                 *
+ *  Copyright:   (c) 2022, Elena Chelarasu                                *
+ *  Description: The interface that contains all the common methods and   *
+ *               properties of the views.                                 *
+ *                                                                        *
+ **************************************************************************/
+using DataClasses;
 using System.Collections.Generic;
 
 

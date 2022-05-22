@@ -1,4 +1,11 @@
-﻿
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IViewState.cs                                            *
+ *  Copyright:   (c) 2022, Cezar Dondas                                   *
+ *  Description: The interface of a view state. It contains only the      *
+ *               common methods of all the view states.                   *
+ *                                                                        *
+ **************************************************************************/
 namespace Interfaces
 {
     /// <summary>

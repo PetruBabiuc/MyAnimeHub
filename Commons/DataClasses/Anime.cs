@@ -1,9 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Anime.cs                                                 *
+ *  Copyright:   (c) 2022, Maria Lupu                                     *
+ *  Description: The "model" class that encapsulates the attributes of    *
+ *               an anime.                                                *
+ *                                                                        *
+ **************************************************************************/
 namespace DataClasses
 {
     /// <summary>

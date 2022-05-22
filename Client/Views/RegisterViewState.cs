@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        RegisterViewState.cs                                     *
+ *  Copyright:   (c) 2022, Cezar Dondas                                   *
+ *  Description: The state of the client where the user can create an     *
+ *               account.                                                 *
+ *                                                                        *
+ **************************************************************************/
+using System;
 using System.Windows.Forms;
 using Interfaces;
 using Views;
@@ -63,7 +71,7 @@ namespace ViewStates
                     textBoxLuna.Text.Length > 0 &&
                     textBoxAn.Text.Length > 0)
                 {
-                    account.BirthDate = $"{textBoxZi.Text}/{textBoxLuna}/{textBoxAn}";
+                    account.BirthDate = $"{textBoxZi.Text}/{textBoxLuna.Text}/{textBoxAn.Text}";
                 }
                 if(_dbManager.RegisterUserAccount(account))
                     ChangeState(GuiViewStateType.Intro);

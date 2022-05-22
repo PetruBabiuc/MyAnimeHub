@@ -47,9 +47,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractSQLiteDBManager.cs" />
-    <Compile Include="MyAnimeHubDBManager.cs" />
-    <Compile Include="MyAnimeHubDBManagerJsonAdapter.cs" />
+    <Compile Include="AbstractSQLiteDBManager\Elena\AbstractSQLiteDBManager.cs" />
+    <Compile Include="AbstractSQLiteDBManager\Petru\AbstractSQLiteDBManager.cs" />
+    <Compile Include="MyAnimeHubDBManagerJsonAdapter\Cezar\MyAnimeHubDBManagerJsonAdapter.cs" />
+    <Compile Include="MyAnimeHubDBManagerJsonAdapter\Elena\MyAnimeHubDBManagerJsonAdapter.cs" />
+    <Compile Include="MyAnimeHubDBManagerJsonAdapter\Maria\MyAnimeHubDBManagerJsonAdapter.cs" />
+    <Compile Include="MyAnimeHubDBManager\Cezar\MyAnimeHubDBManager.cs" />
+    <Compile Include="MyAnimeHubDBManager\Elena\MyAnimeHubDBManager.cs" />
+    <Compile Include="MyAnimeHubDBManager\Maria\MyAnimeHubDBManager.cs" />
+    <Compile Include="MyAnimeHubDBManager\Petru\MyAnimeHubDBManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

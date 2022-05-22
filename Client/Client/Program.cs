@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Program.cs                                               *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: The main entry point for the client application.         *
+ *                                                                        *
+ **************************************************************************/
+
+using System;
 using Interfaces;
 using Views;
 using System.Windows.Forms;

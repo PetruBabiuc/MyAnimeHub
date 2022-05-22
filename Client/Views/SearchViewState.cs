@@ -1,13 +1,15 @@
-﻿using Views;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        SearchViewState.cs                                       *
+ *  Copyright:   (c) 2022, Maria Lupu                                     *
+ *  Description: This is the file where the class that allows the user    *
+ *               to see the results of his search is defined.             *
+ *                                                                        *
+ **************************************************************************/
 using Interfaces;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataClasses;
 

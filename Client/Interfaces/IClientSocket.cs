@@ -1,4 +1,14 @@
-﻿
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IClientSocket.cs                                         *
+ *  Copyright:   (c) 2022, Maria Lupu                                     *
+ *  Description: Defines the IClientSocket interface. It declares the     *
+ *               minimal functionality of the classes that will be used   *
+ *               by the DBManagerClientProxy to interoperate with the     *
+ *               sever.                                                   *
+ *                                                                        *
+ **************************************************************************/
+
 namespace Interfaces
 {
     /// <summary>

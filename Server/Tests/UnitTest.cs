@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        UnitTest.cs                                              *
+ *  Copyright:   (c) 2022, Elena Chelarasu                                *
+ *  Description: This is the file containing the class that tests the     *
+ *               functionality of the server.                             *
+ *                                                                        *
+ **************************************************************************/
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CommonHelpers;
 using DataClasses;

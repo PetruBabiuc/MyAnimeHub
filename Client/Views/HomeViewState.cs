@@ -1,11 +1,15 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        HomeViewState.cs                                         *
+ *  Copyright:   (c) 2022, Elena Chelarasu                                *
+ *  Description: The view state where the user gets after logging in.     *
+ *               The main purpose of this view is to display the news     *
+ *               as well as letting the user use the search function.     *
+ *                                                                        *
+ **************************************************************************/
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Interfaces;
 using Views;

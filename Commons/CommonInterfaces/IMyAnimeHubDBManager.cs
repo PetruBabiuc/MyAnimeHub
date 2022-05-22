@@ -1,4 +1,12 @@
-﻿
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IMyAnimeHubDBManager.cs                                  *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: The interface of the manager of the database. It         *
+ *               contains methods for every specific operation on the     *
+ *               database.                                                *
+ *                                                                        *
+ **************************************************************************/
 using DataClasses;
 using System.Collections.Generic;
 

@@ -1,4 +1,11 @@
-﻿using Sockets;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Program.cs                                               *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: The entry point of the server application.               *
+ *                                                                        *
+ **************************************************************************/
+using Sockets;
 
 
 namespace Server

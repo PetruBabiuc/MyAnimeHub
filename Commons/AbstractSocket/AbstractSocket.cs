@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        AbstractSocket.cs                                        *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: The class that encapsulates the boilerplate code of      *
+ *               the communication endpoints.                             *
+ *                                                                        *
+ **************************************************************************/
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;

@@ -1,4 +1,13 @@
-﻿using Newtonsoft.Json;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        JsonUtilities.cs                                         *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: The class that contains the serialization and            *
+ *               deserialization of objects methods from/to JSON          *
+ *               strings.                                                 *
+ *                                                                        *
+ **************************************************************************/
+using Newtonsoft.Json;
 
 
 namespace CommonHelpers

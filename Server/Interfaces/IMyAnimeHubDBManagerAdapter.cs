@@ -1,4 +1,14 @@
-﻿
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        IMyAnimeHubDBManagerAdapter.cs                           *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: The interface of an adapter for the                      *
+ *               IMyAnimeHubDBManager interface. The clients that would   *
+ *               use the implementations of this class are those who      *
+ *               would want to use only strings that encapsulate          *
+ *               requests and and responses.                              *
+ *                                                                        *
+ **************************************************************************/
 using InitialClientActions;
 
 namespace Interfaces

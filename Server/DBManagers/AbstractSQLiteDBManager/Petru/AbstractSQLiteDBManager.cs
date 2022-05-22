@@ -1,4 +1,13 @@
-﻿using System.Collections.Generic;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        AbstractSQLiteDBManager.cs                               *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: The file that contains the definitions of the            *
+ *               ExecuteQuery method and of the primary constructor of    *
+ *               the AbstractSQLiteDBManager class.                       *
+ *                                                                        *
+ **************************************************************************/
+using System.Collections.Generic;
 using System.Data.SQLite;
 
 namespace DBManagers
@@ -6,7 +15,7 @@ namespace DBManagers
     /// <summary>
     /// Class that gives basic operations to work with a SQLite Database
     /// </summary>
-    public abstract class AbstractSQLiteDBManager
+    public abstract partial class AbstractSQLiteDBManager
     {
         private string _dbPath;
 
@@ -45,31 +54,6 @@ namespace DBManagers
 
             // When the SQLiteDataReader is closed, the connection is also closed
             return command.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
-        }
-
-        /// <summary>
-        /// Functions that executes a non-query command (UPDATE, INSERT etc)
-        /// </summary>
-        /// <param name="commandString">
-        /// The command string
-        /// </param>
-        /// <param name="parameters">
-        /// The Dictionary encapsulating all the parameter names and values used for Prepared Statements
-        /// Ex: { "@userId" to 1, "@password" to "strongPass" }
-        /// </param>
-        protected void ExecuteNonQuery(string commandString, Dictionary<string, object> parameters = null)
-        {
-            using(SQLiteConnection connection = new SQLiteConnection($"URI=file:{_dbPath}"))
-            {
-                connection.Open();
-                using (SQLiteCommand command = new SQLiteCommand(commandString, connection))
-                {
-                    if (parameters != null)
-                        foreach (KeyValuePair<string, object> entry in parameters)
-                            command.Parameters.AddWithValue(entry.Key, entry.Value);
-                    command.ExecuteNonQuery();
-                }
-            }
         }
     }
 }

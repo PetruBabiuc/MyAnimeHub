@@ -1,4 +1,10 @@
-﻿
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        News.cs                                                  *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: The data class that encapsulates the news.               *
+ *                                                                        *
+ **************************************************************************/
 namespace DataClasses
 {
     /// <summary>

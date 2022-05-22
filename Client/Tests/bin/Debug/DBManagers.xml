@@ -10,31 +10,56 @@
             It also shows the result messages from the server in MessageBoxes
             </summary>
         </member>
-        <member name="F:DBManagers.DBManagerClientProxy._clientSocket">
+        <member name="M:DBManagers.DBManagerClientProxy.Login(System.String,System.String)">
             <summary>
-            The Socket for communicating with the client
+            Function used to log in the client
             </summary>
-        </member>
-        <member name="M:DBManagers.DBManagerClientProxy.AddOrReplaceReview(DataClasses.Review)">
-            <summary>
-            Function that adds a review in the data base
-            </summary>
-            <param name="review">
-            The object that encapsulates review's data
+            <param name="user">
+            The user name of the client
             </param>
-        </member>
-        <member name="M:DBManagers.DBManagerClientProxy.GetAnimeList(System.String,System.Int32)">
-            <summary>
-            Method used to fetch the anime names and IDs
-            </summary>
-            <param name="name">
-            The string that should be found case insensitively in the anime name
-            </param>
-            <param name="pageIndex">
-            The index of the page
+            <param name="pass">
+            The password of the client
             </param>
             <returns>
-            A list of objects encapsulating anime which have a name matching given name
+            True if there is an user with the given credentials, false otherwise
+            </returns>
+        </member>
+        <member name="M:DBManagers.DBManagerClientProxy.RegisterUserAccount(DataClasses.UserAccount)">
+            <summary>
+            Method to register an account
+            </summary>
+            <param name="account">
+            The object that encapsulates all the informations about the account
+            </param>
+            <returns>
+            True if the registration was successful, false otherwise
+            </returns>
+        </member>
+        <member name="M:DBManagers.DBManagerClientProxy.UpdateProfile(DataClasses.UserAccount)">
+            <summary>
+            The method used to update client's user profile
+            </summary>
+            <param name="account">
+            The object that encapsulates all the new informations about the profile
+            </param>
+            <returns>
+            True if the update was successful, false otherwise
+            </returns>
+        </member>
+        <member name="M:DBManagers.DBManagerClientProxy.GenericAccountRequest(System.String,DataClasses.UserAccount)">
+            <summary>
+            Function containing the boilerplate code of all the functions
+            That receive a refrence to an user account as parameter
+            </summary>
+            <param name="requestFunction">
+            The function to be requested
+            </param>
+            <param name="account">
+            The object that contains relevant informations about the account
+            For the requested function
+            </param>
+            <returns>
+            True if the request succeded, false otherwise
             </returns>
         </member>
         <member name="M:DBManagers.DBManagerClientProxy.GetNews(System.Int32)">
@@ -87,56 +112,31 @@
             An object that encapsulates all the informations about the profile
             </returns>
         </member>
-        <member name="M:DBManagers.DBManagerClientProxy.Login(System.String,System.String)">
+        <member name="F:DBManagers.DBManagerClientProxy._clientSocket">
             <summary>
-            Function used to log in the client
+            The Socket for communicating with the client
             </summary>
-            <param name="user">
-            The user name of the client
-            </param>
-            <param name="pass">
-            The password of the client
-            </param>
-            <returns>
-            True if there is an user with the given credentials, false otherwise
-            </returns>
         </member>
-        <member name="M:DBManagers.DBManagerClientProxy.RegisterUserAccount(DataClasses.UserAccount)">
+        <member name="M:DBManagers.DBManagerClientProxy.AddOrReplaceReview(DataClasses.Review)">
             <summary>
-            Method to register an account
+            Function that adds a review in the data base
             </summary>
-            <param name="account">
-            The object that encapsulates all the informations about the account
+            <param name="review">
+            The object that encapsulates review's data
             </param>
-            <returns>
-            True if the registration was successful, false otherwise
-            </returns>
         </member>
-        <member name="M:DBManagers.DBManagerClientProxy.UpdateProfile(DataClasses.UserAccount)">
+        <member name="M:DBManagers.DBManagerClientProxy.GetAnimeList(System.String,System.Int32)">
             <summary>
-            The method used to update client's user profile
+            Method used to fetch the anime names and IDs
             </summary>
-            <param name="account">
-            The object that encapsulates all the new informations about the profile
+            <param name="name">
+            The string that should be found case insensitively in the anime name
+            </param>
+            <param name="pageIndex">
+            The index of the page
             </param>
             <returns>
-            True if the update was successful, false otherwise
-            </returns>
-        </member>
-        <member name="M:DBManagers.DBManagerClientProxy.GenericAccountRequest(System.String,DataClasses.UserAccount)">
-            <summary>
-            Function containing the boilerplate code of all the functions
-            That receive a refrence to an user account as parameter
-            </summary>
-            <param name="requestFunction">
-            The function to be requested
-            </param>
-            <param name="account">
-            The object that contains relevant informations about the account
-            For the requested function
-            </param>
-            <returns>
-            True if the request succeded, false otherwise
+            A list of objects encapsulating anime which have a name matching given name
             </returns>
         </member>
     </members>

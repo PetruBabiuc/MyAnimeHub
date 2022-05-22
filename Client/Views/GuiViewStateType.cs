@@ -1,5 +1,11 @@
-﻿
-
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        GuiViewStateType.cs                                      *
+ *  Copyright:   (c) 2022, Cezar Dondas                                   *
+ *  Description: This is the file where the Enum containing the states    *
+ *               of the GuiView is defined.                               *
+ *                                                                        *
+ **************************************************************************/
 namespace Views
 {
     /// <summary>

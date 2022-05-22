@@ -2,7 +2,6 @@
 using InitialClientActions;
 using Interfaces;
 using System;
-using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 
@@ -151,8 +150,8 @@ namespace Sockets
             string clientIp = GetClientIPAddress(clientSocket);
             string dataRead, response;
             InitialAction action;
-            int tries = 1;
-            while (tries <= MaxLoginTries)
+            int tries = 0;
+            while (tries < MaxLoginTries)
             {
                 try
                 {

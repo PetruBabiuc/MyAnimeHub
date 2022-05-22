@@ -1,4 +1,13 @@
-﻿using System.Text.RegularExpressions;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        RegexUtilities.cs                                        *
+ *  Copyright:   (c) 2022, Elena Chelarasu                                *
+ *  Description: The class that provides simplified methods to work       *
+ *               with regular expressions (only the method that tests     *
+ *               if a string matches a regex at the moment).              *
+ *                                                                        *
+ **************************************************************************/
+using System.Text.RegularExpressions;
 
 namespace CommonHelpers
 {

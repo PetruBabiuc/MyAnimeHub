@@ -9,6 +9,18 @@
             Class that gives basic operations to work with a SQLite Database
             </summary>
         </member>
+        <member name="M:DBManagers.AbstractSQLiteDBManager.ExecuteNonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Functions that executes a non-query command (UPDATE, INSERT etc)
+            </summary>
+            <param name="commandString">
+            The command string
+            </param>
+            <param name="parameters">
+            The Dictionary encapsulating all the parameter names and values used for Prepared Statements
+            Ex: { "@userId" to 1, "@password" to "strongPass" }
+            </param>
+        </member>
         <member name="M:DBManagers.AbstractSQLiteDBManager.#ctor(System.String)">
             <summary>
             Primary constructor
@@ -32,110 +44,78 @@
             The SQLiteDataReader from which the query results can be read
             </returns>
         </member>
-        <member name="M:DBManagers.AbstractSQLiteDBManager.ExecuteNonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+        <member name="T:DBManagers.MyAnimeHubDBManagerJsonAdapter">
             <summary>
-            Functions that executes a non-query command (UPDATE, INSERT etc)
+            The adapter class between a client that wants to command an MyAnimeHubDBManager using only strings
+            It requires the strings to encapsulate requests in JSON format
             </summary>
-            <param name="commandString">
-            The command string
+        </member>
+        <member name="M:DBManagers.MyAnimeHubDBManagerJsonAdapter.LoginOrRegister(System.String,System.String@)">
+            <summary>
+            The function that logs in or registers the user
+            </summary>
+            <param name="request">
+            The JSON string encapsulating the request
             </param>
-            <param name="parameters">
-            The Dictionary encapsulating all the parameter names and values used for Prepared Statements
-            Ex: { "@userId" to 1, "@password" to "strongPass" }
+            <param name="result">
+            The JSON string encapsulating the result
             </param>
+            <returns>
+            The result of the action encapsulated by the request parameter
+            </returns>
+        </member>
+        <member name="F:DBManagers.MyAnimeHubDBManagerJsonAdapter._adaptee">
+            <summary>
+            The adaptee object
+            </summary>
+        </member>
+        <member name="M:DBManagers.MyAnimeHubDBManagerJsonAdapter.ProcessRequest(System.String,System.String@)">
+            <summary>
+            The function used to process user's requests after logging in
+            </summary>
+            <param name="request">
+            The JSON string encapsulating the request
+            </param>
+            <param name="result">
+            The JSON string encapsulating the result
+            </param>
+            <returns>
+            True if the request was valid, false otherwise
+            </returns>
+        </member>
+        <member name="M:DBManagers.MyAnimeHubDBManagerJsonAdapter.Login(DataClasses.UserAccount,System.String@)">
+            <summary>
+            Function used to log in the user 
+            </summary>
+            <param name="account">
+            The object encapsulating the user account's data
+            </param>
+            <param name="result">
+            The JSON string that contains the result
+            </param>
+            <returns>
+            True if the login succeded, false otherwise
+            </returns>
+        </member>
+        <member name="M:DBManagers.MyAnimeHubDBManagerJsonAdapter.RegisterUserAccount(DataClasses.UserAccount,System.String@)">
+            <summary>
+            Method that register an user account
+            </summary>
+            <param name="account">
+            Object containing the data of the new account
+            </param>
+            <param name="result">
+            The JSON string containing the result
+            </param>
+            <returns>
+            True if the registration was successful, false otherwise
+            </returns>
         </member>
         <member name="T:DBManagers.MyAnimeHubDBManager">
             <summary>
             The SQLiteDatabaseManaged of the MyAnimeHub server
             It requires the database to have the RELATIVE path: Persistence/MyAnimeHub.db
             </summary>
-        </member>
-        <member name="F:DBManagers.MyAnimeHubDBManager.PageSize">
-            <summary>
-            The (maximum) number of the elements on each reviews/news/anime page
-            </summary>
-        </member>
-        <member name="F:DBManagers.MyAnimeHubDBManager._userId">
-            <summary>
-            The ID of the user
-            </summary>
-        </member>
-        <member name="M:DBManagers.MyAnimeHubDBManager.Login(System.String,System.String)">
-            <summary>
-            Function used to log in the client
-            </summary>
-            <param name="user">
-            The user name of the client
-            </param>
-            <param name="pass">
-            The password of the client
-            </param>
-            <returns>
-            True if there is an user with the given credentials, false otherwise
-            </returns>
-        </member>
-        <member name="M:DBManagers.MyAnimeHubDBManager.GetUserAccount(System.String,System.String)">
-            <summary>
-            Method that fetches all the informations about the user profile
-            </summary>
-            <param name="user">
-            The user name of the account
-            </param>
-            <param name="pass">
-            The password of the account
-            </param>
-            <returns>
-            An object that encapsulates all the informations about the profile
-            </returns>
-        </member>
-        <member name="M:DBManagers.MyAnimeHubDBManager.RegisterUserAccount(DataClasses.UserAccount)">
-            <summary>
-            Method to register an account
-            </summary>
-            <param name="account">
-            The object that encapsulates all the informations about the account
-            </param>
-            <returns>
-            True if the registration was successful, false otherwise
-            </returns>
-        </member>
-        <member name="M:DBManagers.MyAnimeHubDBManager.UpdateProfile(DataClasses.UserAccount)">
-            <summary>
-            The method used to update client's user profile
-            </summary>
-            <param name="account">
-            The object that encapsulates all the new informations about the profile
-            </param>
-            <returns>
-            True if the update was successful, false otherwise
-            </returns>
-        </member>
-        <member name="M:DBManagers.MyAnimeHubDBManager.AddOrReplaceReview(DataClasses.Review)">
-            <summary>
-            Function that adds a review in the data base
-            </summary>
-            <param name="review">
-            The object that encapsulates review's data
-            </param>
-        </member>
-        <member name="M:DBManagers.MyAnimeHubDBManager.UserHasName(System.String)">
-            <summary>
-            Function used to check if there is an user with the given name
-            </summary>
-            <param name="name">
-            The name
-            </param>
-            <returns>
-            True if there is such an user, false otherwise
-            </returns>
-        </member>
-        <member name="M:DBManagers.MyAnimeHubDBManager.AddReview(System.Collections.Generic.Dictionary{System.String,System.Object})">
-            <summary>
-            Function to add a review
-            </summary>
-            <param name="parameters">
-            Dictionary used for the INSERT Prepared Statement
-            </param>
         </member>
         <member name="M:DBManagers.MyAnimeHubDBManager.ReplaceReview(System.Collections.Generic.Dictionary{System.String,System.Object})">
             <summary>
@@ -195,6 +175,33 @@
             The object encapsulating the anime
             </returns>
         </member>
+        <member name="M:DBManagers.MyAnimeHubDBManager.AddOrReplaceReview(DataClasses.Review)">
+            <summary>
+            Function that adds a review in the data base
+            </summary>
+            <param name="review">
+            The object that encapsulates review's data
+            </param>
+        </member>
+        <member name="M:DBManagers.MyAnimeHubDBManager.UserHasName(System.String)">
+            <summary>
+            Function used to check if there is an user with the given name
+            </summary>
+            <param name="name">
+            The name
+            </param>
+            <returns>
+            True if there is such an user, false otherwise
+            </returns>
+        </member>
+        <member name="M:DBManagers.MyAnimeHubDBManager.AddReview(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Function to add a review
+            </summary>
+            <param name="parameters">
+            Dictionary used for the INSERT Prepared Statement
+            </param>
+        </member>
         <member name="M:DBManagers.MyAnimeHubDBManager.GetNews(System.Int32)">
             <summary>
             Function used to obtain the news
@@ -204,6 +211,31 @@
             </param>
             <returns>
             A list of objects encapsulating news
+            </returns>
+        </member>
+        <member name="M:DBManagers.MyAnimeHubDBManager.Login(System.String,System.String)">
+            <summary>
+            Function used to log in the client
+            </summary>
+            <param name="user">
+            The user name of the client
+            </param>
+            <param name="pass">
+            The password of the client
+            </param>
+            <returns>
+            True if there is an user with the given credentials, false otherwise
+            </returns>
+        </member>
+        <member name="M:DBManagers.MyAnimeHubDBManager.UpdateProfile(DataClasses.UserAccount)">
+            <summary>
+            The method used to update client's user profile
+            </summary>
+            <param name="account">
+            The object that encapsulates all the new informations about the profile
+            </param>
+            <returns>
+            True if the update was successful, false otherwise
             </returns>
         </member>
         <member name="M:DBManagers.MyAnimeHubDBManager.GetReviews(System.Int32,System.Int32)">
@@ -220,71 +252,44 @@
             A list of objects encapsulating reviews
             </returns>
         </member>
-        <member name="T:DBManagers.MyAnimeHubDBManagerJsonAdapter">
+        <member name="F:DBManagers.MyAnimeHubDBManager.PageSize">
             <summary>
-            The adapter class between a client that wants to command an MyAnimeHubDBManager using only strings
-            It requires the strings to encapsulate requests in JSON format
+            The (maximum) number of the elements on each reviews/news/anime page
             </summary>
         </member>
-        <member name="F:DBManagers.MyAnimeHubDBManagerJsonAdapter._adaptee">
+        <member name="F:DBManagers.MyAnimeHubDBManager._userId">
             <summary>
-            The adaptee object
+            The ID of the user
             </summary>
         </member>
-        <member name="M:DBManagers.MyAnimeHubDBManagerJsonAdapter.LoginOrRegister(System.String,System.String@)">
+        <member name="M:DBManagers.MyAnimeHubDBManager.#ctor">
             <summary>
-            The function that logs in or registers the user
+            Primary constructor
             </summary>
-            <param name="request">
-            The JSON string encapsulating the request
-            </param>
-            <param name="result">
-            The JSON string encapsulating the result
-            </param>
-            <returns>
-            The result of the action encapsulated by the request parameter
-            </returns>
         </member>
-        <member name="M:DBManagers.MyAnimeHubDBManagerJsonAdapter.ProcessRequest(System.String,System.String@)">
+        <member name="M:DBManagers.MyAnimeHubDBManager.RegisterUserAccount(DataClasses.UserAccount)">
             <summary>
-            The function used to process user's requests after logging in
-            </summary>
-            <param name="request">
-            The JSON string encapsulating the request
-            </param>
-            <param name="result">
-            The JSON string encapsulating the result
-            </param>
-            <returns>
-            True if the request was valid, false otherwise
-            </returns>
-        </member>
-        <member name="M:DBManagers.MyAnimeHubDBManagerJsonAdapter.Login(DataClasses.UserAccount,System.String@)">
-            <summary>
-            Function used to log in the user 
+            Method to register an account
             </summary>
             <param name="account">
-            The object encapsulating the user account's data
-            </param>
-            <param name="result">
-            The JSON string that contains the result
-            </param>
-            <returns>
-            True if the login succeded, false otherwise
-            </returns>
-        </member>
-        <member name="M:DBManagers.MyAnimeHubDBManagerJsonAdapter.RegisterUserAccount(DataClasses.UserAccount,System.String@)">
-            <summary>
-            Method that register an user account
-            </summary>
-            <param name="account">
-            Object containing the data of the new account
-            </param>
-            <param name="result">
-            The JSON string containing the result
+            The object that encapsulates all the informations about the account
             </param>
             <returns>
             True if the registration was successful, false otherwise
+            </returns>
+        </member>
+        <member name="M:DBManagers.MyAnimeHubDBManager.GetUserAccount(System.String,System.String)">
+            <summary>
+            Method that fetches all the informations about the user profile
+            </summary>
+            <param name="user">
+            The user name of the account
+            </param>
+            <param name="pass">
+            The password of the account
+            </param>
+            <returns>
+            An object that encapsulates all the informations about the profile
             </returns>
         </member>
     </members>

@@ -1,4 +1,12 @@
-﻿using DataClasses;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        ProfileViewState.cs                                      *
+ *  Copyright:   (c) 2022, Elena Chelarasu                                *
+ *  Description: The view where the user can see the details of his       *
+ *               profile and update them.                                 *
+ *                                                                        *
+ **************************************************************************/
+using DataClasses;
 using Views;
 using Interfaces;
 using System;

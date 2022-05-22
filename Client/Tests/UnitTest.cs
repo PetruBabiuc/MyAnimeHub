@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        UnitTest.cs                                              *
+ *  Copyright:   (c) 2022, Maria Lupu                                     *
+ *  Description: This is the file ehere the source code of the unit       *
+ *               tests is located.                                        *
+ *                                                                        *
+ **************************************************************************/
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Interfaces;
 using DBManagers;
@@ -26,12 +34,12 @@ namespace Tests
             Assert.AreEqual(true, _loginResult);
         }
 
-        // [TestMethod]
-        // public void InvalidLogin()
-        // {
-        //     IMyAnimeHubDBManager _DBManagerProxy = new DBManagerClientProxy();
-        //     Assert.AreEqual(false, _DBManagerProxy.Login("QQQQQQQ", "QQQQQQQQ"));
-        // }
+        [TestMethod]
+        public void InvalidLogin()
+        {
+            IMyAnimeHubDBManager _DBManagerProxy = new DBManagerClientProxy();
+            Assert.AreEqual(false, _DBManagerProxy.Login("QQQQQQQ", "QQQQQQQQ"));
+        }
 
         [TestMethod]
         public void NewsPage()

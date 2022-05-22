@@ -1,4 +1,13 @@
-﻿using System.Collections.Generic;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        GuiView.cs                                               *
+ *  Copyright:   (c) 2022, Elena Chelarasu                                *
+ *  Description: The source code of the class GuiView. It is the          *
+ *               "Context" component of the implementation of the state   *
+ *               machine design pattern.                                  *
+ *                                                                        *
+ **************************************************************************/
+using System.Collections.Generic;
 using Interfaces;
 using ViewStates;
 using System.Windows.Forms;

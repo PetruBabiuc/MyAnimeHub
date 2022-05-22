@@ -1,4 +1,10 @@
-﻿
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        Review.cs                                                *
+ *  Copyright:   (c) 2022, Elena Chelarasu                                *
+ *  Description: Data class that contains the properties of a review.     *
+ *                                                                        *
+ **************************************************************************/
 using System;
 
 namespace DataClasses

@@ -1,4 +1,11 @@
-﻿
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        InitialClientActions.cs                                  *
+ *  Copyright:   (c) 2022, Petru Babiuc                                   *
+ *  Description: The enum of the possible initial actions of the          *
+ *               client.                                                  *
+ *                                                                        *
+ **************************************************************************/
 namespace InitialClientActions
 {
     /// <summary>

@@ -1,4 +1,12 @@
-﻿using System;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        LoginViewState.cs                                        *
+ *  Copyright:   (c) 2022, Cezar Dondas                                   *
+ *  Description: The state of the client where the user can use his       *
+ *               account's credentials to log in.                         *
+ *                                                                        *
+ **************************************************************************/
+using System;
 using System.Windows.Forms;
 using Interfaces;
 using Views;

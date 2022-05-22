@@ -1,4 +1,12 @@
-﻿using CommonHelpers;
+﻿/**************************************************************************
+ *                                                                        *
+ *  File:        UserAccount.cs                                           *
+ *  Copyright:   (c) 2022, Cezar Dondas                                   *
+ *  Description: Data class that encapsulates the attributes of an user   *
+ *               account                                                  *
+ *                                                                        *
+ **************************************************************************/
+using CommonHelpers;
 using System;
 
 namespace DataClasses
